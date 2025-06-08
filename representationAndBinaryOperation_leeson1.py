@@ -15,7 +15,9 @@ def binaryToNegativeBased2(s_bin:str)->str:
     if(s_neg[-1]==0):
         s_neg[-1]=1
     return s_neg
-
-bin=decimalToBinary(int(input("Enter a number:"))) #הנחה הקלט תקין
-print(bin)
-print(binaryToNegativeBased2(bin))
+try: 
+    bin=decimalToBinary(int(input("Enter a number:"))) #הנחה הקלט תקין
+    print(bin)
+    print(binaryToNegativeBased2(bin))
+except:
+    print("The input wasn't a number")
